@@ -1,0 +1,8 @@
+@font-face {
+    src: url("font/GoodDogPlain.ttf");
+}
+
+.root {
+    -fx-background-image: url("img/bgr.jpg");
+    -fx-font-family: "GoodDog Plain";
+}
