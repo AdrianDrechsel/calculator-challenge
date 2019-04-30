@@ -1,8 +1,72 @@
-@font-face {
-    src: url("font/GoodDogPlain.ttf");
-}
-
 .root {
     -fx-background-image: url("img/bgr.jpg");
-    -fx-font-family: "GoodDog Plain";
+    -fx-padding: 72px 48px;
+
+    -fx-font-family: "GoodDog Plain", "Arial Black";
+    -fx-font-size: 20;
+}
+
+.button {
+    -fx-height: 64px;
+    -fx-width: 64px;
+
+    -fx-pref-width: -fx-width;
+    -fx-pref-height: -fx-height;
+    -fx-max-width: -fx-width;
+    -fx-max-height: -fx-height;
+    -fx-min-width: -fx-width;
+    -fx-min-height: -fx-height;
+    -fx-border-radius: 50%;
+
+    -fx-background-image: url("img/candy.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+
+    -fx-cursor: hand;
+}
+.button:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+.button .text {
+    -fx-fill: white;
+    -fx-stroke: black;
+    -fx-stroke-width: 0.04em;
+    -fx-stroke-type: outside;
+
+    -fx-scale-x: 2;
+    -fx-scale-y: 2;
+
+    -fx-effect: dropshadow(gaussian, #461206, 0, 4, 0, 2);
+}
+.button.operator {
+    -fx-background-image: url("img/doughnut.png");
+}
+.button#plusminus {
+    -fx-background-image: url("img/effect.png");
+}
+.button#equal {
+    -fx-background-image: url("img/star.png");
+}
+.button#ac {
+    -fx-background-image: url("img/cancel.png");
+}
+
+#display {
+    -fx-padding: 0 1em;
+
+    -fx-pref-width: 640px;
+    -fx-pref-height: 128px;
+
+    -fx-background-image: url("img/paper.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: transparent;
+
+    -fx-font-size: 48;
+    -fx-text-alignment: center;
+
+    -fx-effect: dropshadow(gaussian, #461206, 0, 4, 0, 2);
 }
